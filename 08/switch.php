@@ -6,6 +6,8 @@
  * ※アルゴリズムとデータ構造について学んでいたため、再帰処理で書いてみました。
  */
 
+declare(strict_types=1);
+
 $bottles;
 const CNT = 99;
 
@@ -13,12 +15,14 @@ bottles_of_beer_on_wall(CNT);
 
 /**
  * 有名なアルゴリズムの一つである99 bottles of beer on wallを実装しました。
+ * 今回は少し頭を捻って再帰処理 (recursive) で実装しました。
+ * 
  * 残りボトル数が一つになった時にbottlesからbottleとテキストを変えます。
  * ボトルがなくなった時にプログラムを終了します。
  * @param [type] $counter - ビールの残りボトル数をカウントします。
  * @return void - 再帰処理のため最終的な返り値はありません。
  */
-function bottles_of_beer_on_wall($cnt)
+function bottles_of_beer_on_wall(int $cnt): void
 {
     switch ($cnt)
     {   
