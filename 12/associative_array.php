@@ -1,5 +1,7 @@
 <?php
 
+
+
 const MY_COMPETENCIES = [
     'web development' => 4,
     'game development' => 6,
