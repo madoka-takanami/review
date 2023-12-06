@@ -2,10 +2,6 @@
 <html>
   <head>
     <title>PHP基礎</title>
-    <!--
-      見やすくするため、bootstrapを使用しています
-      https://getbootstrap.jp/docs/5.0/components/alerts/
-    -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
       table {
@@ -43,8 +39,6 @@
 
               $max_items_count = 0;
               foreach ($items as $value) {
-                // 順番に'.php'が含まれているか探します。'.php'が含まれている場合はaタグに入れます。
-                // 含まれていなければ、今回は一番目を課題名にしているため、そのままtdタグに入れます。
                 if (strpos($value, KEYWORD) !== false) {
                   echo '<td class="secondary"><a href="' . $value . '">' . $value . '</a></td>';
                 } else {
