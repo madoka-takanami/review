@@ -2,7 +2,6 @@
 
 /**
  * Archaic Algorithm for the sieve of Eratosthenes
- * 難易度: ☆
  */
 
 /**
