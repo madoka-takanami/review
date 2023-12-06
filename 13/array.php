@@ -2,30 +2,24 @@
 
 declare(strict_types=1);
 
-// 宣言
 define('BIO', array('Shakespeare', 'Hamlet', 13, '1564-04-26T20:21:00'));
 $my_bio = BIO;
 
-// 情報の表示
 echo "-------------- オブジェクトの情報を表示 --------------\n";
 echo var_dump(BIO) . "\n";
 echo var_dump($my_bio) . "\n\n";
 
-
-// 要素の数
 echo "-------------- 要素の数を表示 --------------\n";
 echo "The length of the object is " . count(BIO) . "\n\n";
 
 showElement(BIO);
 popElement(BIO);
 
-// 代入
 $my_bio[0] = 'Itsuki Kajiya';
 $my_bio[1] = 'Ataria';
 $my_bio[2] = 25;
 $my_bio[3] = '1998-04-11';
 
-// 要素を追加
 array_push($my_bio, 'Osaka');
 array_push($my_bio, 'Vulnerable');
 array_push($my_bio, 'Warmhearted');
