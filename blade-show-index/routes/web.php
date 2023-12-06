@@ -1,5 +1,6 @@
 <?php
 
+use \App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/tweets', \App\Http\Controllers\Tweets\IndexController::class);
+
+Route::get('/tweets/{id}', \App\Http\Controllers\Show\ShowController::class);
