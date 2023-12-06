@@ -5,9 +5,6 @@
  * th：番号
  * td：素数
  * 
- * 課題のレビュー対象ではありませんが、アルゴリズムとデータ構造を学習していた経験があるので、
- * 素数を割り出すアルゴリズムを三つ用意しました。難易度は、個人的に書いてて時間がかかった順に高いです。
- * 
  * 一度に一つまでincludeしてください。
  */
 
@@ -16,9 +13,9 @@ include 'prime_sieve_of_eratosthenes.php';
 // include 'prime_sieve_of_atkin.php';
 
 /**
- * show indecies of the array saved prime numbers up to a given limit
+ * 配列の番号をthタグに追加します。
  *
- * @param [int] $primes_array_length - The number of elements in $prime_array.
+ * @param [int] $primes_array_length - 配列の要素の数です。
  * @return void
  */
 function showIndex(int $primes_array_length): void {
@@ -30,9 +27,9 @@ function showIndex(int $primes_array_length): void {
 }
 
 /**
- * show prime numbers up to a given limit
- * @param [type] $primes_array - The upper limit of the natural numbers to search for primes.
- * @param [type] $primes_array_length - An array containing prime numbers up to the specified limit.
+ * 素数をtdタグに追加します。
+ * @param [type] $primes_array - 素数を格納した配列です。
+ * @param [type] $primes_array_length - 配列の要素の数です。
  * @return void
  */
 function showPrimes(array $primes_array, int $primes_array_length): void {
