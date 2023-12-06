@@ -4,7 +4,7 @@ $day = 1;
 
 while($day <= 31) {
     
-    $is_saturday = ($day % 7 === 6);
+    $is_saturday = ($day % 7 === 1);
 
     if ($is_saturday)
     {
