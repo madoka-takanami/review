@@ -3,7 +3,7 @@
 $biography = array();
 
 $biography[] = 'Shakespeare';
-$biography[] = 'Hamlet;
+$biography[] = 'Hamlet';
 $biography[] = 'Macbeth';
 $biography[] = 'Othello';
 $biography[] = 'Julius Caesar';
