@@ -33,7 +33,6 @@ function showEto(int $total_year, array $eto_list_arr, int $cnt_eto_list): void 
     // Modify this function to display the Chinese zodiac signs in <td>
     for ($index = 0, $diff_year = 0 ; $diff_year <= $total_year; $index++, $diff_year++) {
 
-        // 干支が12種類しかないため、折り返しのため$indexを再宣言します。
         if ($index >= $cnt_eto_list) {
             $index = 0;
         }
