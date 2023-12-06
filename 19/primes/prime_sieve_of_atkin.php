@@ -2,7 +2,6 @@
 
 /**
  * Modern Algorithm for the sieve of Atkin
- * 難易度: ☆☆☆☆☆
  */
 
 /**
