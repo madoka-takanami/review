@@ -2,7 +2,6 @@
 
 /**
  * Archaic Algorithm for the sieve of Sundaram
- * 難易度: ☆☆
  */
 
 /**
