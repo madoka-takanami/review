@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class TweetsController extends Controller
@@ -11,7 +10,7 @@ class TweetsController extends Controller
         return 'hello';
     }
 
-    public function show($id)
+    public function __invoke($id, Request $request)
     {
         return "hello ${id}";
     }

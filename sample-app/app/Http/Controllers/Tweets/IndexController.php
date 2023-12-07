@@ -12,6 +12,6 @@ class IndexController extends Controller
      */
     public function __invoke(Request $request)
     {
-        return 'Hey, this is created for a single action';
+        return 'hello single action';
     }
 }
