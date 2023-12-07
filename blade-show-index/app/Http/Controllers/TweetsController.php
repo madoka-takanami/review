@@ -10,8 +10,8 @@ class TweetsController extends Controller
         return 'hello';
     }
 
-    public function show($id)
+    public function show($id, Request $request)
     {
-        return "hello ${id}";
+        return "Tweets ${id}";
     }
 }
