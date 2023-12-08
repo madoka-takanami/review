@@ -5,7 +5,7 @@
  * 
  * $x, $y: 基本的な数学記号
  * $limit: ArgumentからParameterに渡す素数を割り出す最大値
- * $num: 本来はlog(N) のN(Natural Number)を表す数学記号, しかし、数学を学習していない方でも理解できるように$numとして定義しました。
+ * $num: 本来はN(Natural Number)を表す数学記号, しかし、数学を学習していない方でも理解できるように$numとして定義しました。
  * 
  * 5以上の奇素数を軸に素数を探します。2と3を主処理に含めない理由はアトキンの櫛の性質上
  * 
@@ -37,8 +37,10 @@
  * @return array $primes - 割り出された素数を格納した配列です。
  */
 function findPrimes(int $limit): array {
+    // 数を素数か非素数かでマークするための配列を初期化します。
     $sieve = array_fill(0, $limit + 1, false);
 
+    // xとyの値を制限内の平方根までループします。
     for ($x = 1; $x * $x <= $limit; $x++) {
         for ($y = 1; $y * $y <= $limit; $y++) {
             $num = (4 * $x * $x) + ($y * $y);
@@ -62,6 +64,7 @@ function findPrimes(int $limit): array {
         }
     }
 
+    // 5以上の素数の2乗の倍数を排除します。
     for ($x = 5; $x * $x <= $limit; $x++) {
         if ($sieve[$x]) {
             for ($y = $x * $x; $y <= $limit; $y += $x * $x) {
