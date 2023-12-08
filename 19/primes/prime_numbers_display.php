@@ -9,9 +9,9 @@
  * 一度に一つまでincludeしてください。
  */
 
-include 'prime_sieve_of_eratosthenes.php';
+// include 'prime_sieve_of_eratosthenes.php';
 // include 'prime_sieve_of_sundaram.php';
-// include 'prime_sieve_of_atkin.php';
+include 'prime_sieve_of_atkin.php';
 
 /**
  * 配列の番号をthタグに追加します。
